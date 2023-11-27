@@ -1,0 +1,39 @@
+// AdminDashboardCard.scss
+
+.admin-dashboard-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    .dashboard-description {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 16px;
+    }
+  
+    .dashboard-features,
+    .dashboard-get-started {
+      margin-top: 16px;
+  
+      h3 {
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+  
+      ul,
+      ol {
+        margin-left: 20px;
+      }
+  
+      li {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 8px;
+        list-style: auto;
+      }
+    }
+  }
+  

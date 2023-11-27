@@ -1,0 +1,185 @@
+.navigation {
+  // display: flex !important;
+  width: 100%;
+  // background: $background-color;
+background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: .5rem 5rem;
+  position: absolute;
+  top: 0;
+  transform: translateY(0);
+  z-index: map-get($z-index, navigation);
+  box-shadow: none;
+  @include bezier-transition(transform, .3s, ease);
+
+  @include tablet {
+    padding: .5rem 2rem;
+  }
+
+  @include mobile {
+    padding: 0 $s-size;
+    position: fixed;
+    // display: none !important;
+  }
+
+  .logo {
+    height: inherit;
+    margin-right: 2rem;
+  }
+
+  .logo img {
+    width: 15rem;
+    height: inherit;
+    object-fit: contain;
+  }
+
+  .logo a {
+    display: block;
+    height: 100%;
+  }
+
+  .searchbar {
+    width: 200px;
+  }
+}
+
+.navigation-admin {
+  height: 6rem;
+  background: $white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .05);
+  padding: .5rem $l-size;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+}
+
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.navigation-menu-1 {
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.navigation-menu-main {
+  // padding-left: 50px;
+  // margin-right: 2rem;
+  // margin-left: 50px;
+  flex-grow: 1;
+
+  li {
+    display: inline-block;
+    
+    a {
+      padding: 10px 15px;
+      font-size: 1.4rem;
+      opacity: .5;
+      
+      &:hover {
+        background: $background-color-01;
+      }
+    }
+  }
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+
+}
+
+.navigation-menu-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation-action {
+  display: flex;
+  align-items: center;
+  margin-right: $xxl-size;
+}
+
+.navigation-menu-link {
+  color: $heading-color;
+  padding: $xs-size $m-size;
+  text-decoration: none;
+  font-size: $font-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  margin-top: 20px;
+
+  &:hover {
+    text-decoration: none;
+    background: $background-color-01;
+  }
+}
+
+.navigation-menu-active {
+  font-weight: bold;
+  opacity: 1 !important;
+}
+
+// ###
+
+// ToggleMenu.scss
+.toggle-menu-container {
+  position: relative;
+
+  .toggle-button {
+    padding: 10px;
+    background-color: #3498db; /* Change to your desired button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .navigation-menu-main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1; /* Change to your desired menu background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px; /* Adjust the top position as needed */
+    left: 0;
+    width: 200px; /* Adjust the width as needed */
+    display: block; /* Ensure the menu is visible */
+  }
+
+  .navigation-menu-main li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navigation-menu-main li:last-child {
+    border-bottom: none;
+  }
+
+  .navigation-menu-main a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .navigation-menu-main a:hover {
+    color: #ffffff; /* Change to your desired hover color */
+  }
+
+  .navigation-menu-active {
+    background-color: #3498db; /* Change to your desired active menu item color */
+    color: #fff;
+    padding: 5px;
+  }
+}

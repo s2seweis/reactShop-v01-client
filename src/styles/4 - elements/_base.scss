@@ -1,0 +1,155 @@
+// 
+// BASE STYLING ---------
+//
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Tajawal', Helvetica, Arial, sans-serif;
+  font-size: $baseFontSize;
+  background: $background-color;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+p {
+  color: $paragraph-color;
+  // font-weight: 300;
+  line-height: $line-height;
+}
+
+strong {
+  font-weight: bold;
+}
+
+span {
+  color: $paragraph-color;
+  font-size: $font-small;
+  // position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tajawal', Helvetica, Arial, sans-serif;
+  color: $heading-color;
+}
+
+// body::-webkit-scrollbar {
+//   width: 8px;
+// }
+
+// body::-webkit-scrollbar-track {
+//   -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: $heading-color;
+//   outline: 1px solid lighten($heading-color, 10%);
+// }
+
+#app {
+  width: 100%;
+  justify-content: center;
+
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  // padding: $top $pad-desktop;
+  padding: 10rem 5rem;
+  display: flex;
+  animation: fadeIn .5s ease;
+  justify-content: center;
+  margin-top: 10px;
+
+
+  @media (max-width: $mobile) {
+    padding: 1rem $m-size;
+    flex-direction: column;
+  }
+}
+
+.content-profile {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: $top $pad-desktop;
+  display: flex;
+  animation: fadeIn .5s ease;
+  justify-content: center;
+
+
+  @media (max-width: $mobile) {
+    padding: 5rem $m-size;
+    flex-direction: column;
+  }
+}
+
+.content-admin {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  position: relative;
+  padding-top: 3.6rem;
+  overflow: hidden;
+  display: flex;
+  // justify-content: center;
+
+}
+
+.content-admin-wrapper {
+  overflow-y: scroll;
+  padding-left: 1rem;
+  animation: fadeIn .5s ease;
+  position: relative;
+  justify-content: center;
+  // width: 800px;
+  height: 100vh;
+  width: 100%;
+  padding-right: 1rem;
+
+  @media (max-width: $mobile) {
+    // width: auto;
+  }
+
+
+}
+
+.content-admin-wrapper-sidebar {
+  animation: fadeIn .5s ease;
+  position: relative;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.dropdown-content {
+  background: white;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+.dropdown-btn-new {
+  text-align: center;
+}

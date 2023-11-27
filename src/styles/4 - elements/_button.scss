@@ -1,0 +1,278 @@
+.button {
+  background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  // min-width: 100px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-users {
+  background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  // min-width: 100px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-shop-now {
+  background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  // min-width: 100px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-back {
+  background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 25%;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-back-new {
+  background: $button-color;
+  // padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // min-width: 100%;
+  max-width: 100px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-sign-up {
+  background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.button-link {
+  @extend .button;
+  background: none;
+  color: $black;
+  border: none;
+
+  &:hover {
+    background: none;
+    border: none;
+  }
+}
+
+.button-muted {
+  @extend .button;
+  background: $background-color-01;
+  color: lighten($paragraph-color, 20%);
+  border: 1px solid $border-color;
+
+  &:hover {
+    background: $background-color;
+    border: 1px solid $border-color-focus;
+  }
+}
+
+.button-muted-orders {
+  @extend .button;
+  background: $background-color-01;
+  color: lighten($paragraph-color, 20%);
+  border: 1px solid $border-color;
+  margin-left: 1.6rem;
+
+  &:hover {
+    background: $background-color;
+    border: 1px solid $border-color-focus;
+  }
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.button-border {
+  background: transparent;
+  border: 1px solid $button-color;
+  color: $button-color;
+
+  &:hover {
+    background: $border-color;
+    border: 1px solid $button-color;
+  }
+}
+
+.button-danger {
+  background: red;
+  width: 100px;
+  color: #fff;
+
+  &:hover {
+    background: darken(red, 10%);
+  }
+}
+
+.button-border-gray {
+  border: 1px solid $border-color;
+  color: $paragraph-color;
+
+  &:hover {
+    border: 1px solid $border-color;
+    background: $border-color;
+  }
+}
+
+.button-small {
+  width: 100px;
+  font-size: $font-small;
+  padding: $s-size $m-size;
+}
+
+.button-small-basket {
+  // width: 100px;
+  font-size: $font-small;
+  padding: $s-size $m-size;
+}
+
+.button-small-products {
+  width: 70px;
+  font-size: $font-small;
+  padding: $s-size $m-size;
+}
+
+.button-icon {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+
+  & * {
+    font-size: inherit;
+  }
+}
+
+.button-variant {
+  // background: $button-color;
+  padding: $m-size;
+  border: 1px solid $button-color;
+  // color: $white;
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-width: 70px;
+  @include bezier-transition(all, .3s, ease);
+
+  &:hover {
+    cursor: pointer;
+    background: $button-hover;
+    border: 1px solid $button-hover;
+    text-decoration: none;
+  }
+}
+
+.dropdown-menu {
+
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+}
+
+.dropdown {
+
+  display: flex;
+
+
+}
+
+.select-product-size {
+
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 40px;
+}
