@@ -20,7 +20,7 @@ const basketItems = shipping.basket.map((item) => {
 })
 
   useEffect(() => {
-    fetch("/api/config").then(async (r) => {
+    fetch("https://reactshop-v01-server-771dbbaf8b75.herokuapp.com/api/config").then(async (r) => {
       const { publishableKey } = await r.json();
       setStripePromise(loadStripe(publishableKey));
     });
@@ -28,7 +28,7 @@ const basketItems = shipping.basket.map((item) => {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("/api/create-payment-intent", {
+    fetch("https://reactshop-v01-server-771dbbaf8b75.herokuapp.com/api/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(

@@ -118,7 +118,7 @@
     "axios": "^0.21.1"
   },
 
-  "proxy": "http://localhost:8080/api"
+  "proxy": "https://reactshop-v01-server-771dbbaf8b75.herokuapp.com/api"
 
  
 
