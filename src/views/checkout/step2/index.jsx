@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable no-nested-ternary */
-import { ArrowLeftOutlined, ArrowRightOutlined, ConsoleSqlOutlined } from '@ant-design/icons';
+import { ArrowLeftOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import { Boundary } from 'components/common';
 import { CHECKOUT_STEP_1, CHECKOUT_STEP_3 } from 'constants/routes';
 import { Form, Formik } from 'formik';
@@ -39,7 +39,7 @@ const FormSchema = Yup.object().shape({
 });
 
 const ShippingDetails = ({ profile, shipping, subtotal }) => {
-  useDocumentTitle('Check Out Step 2 | Shirts Sale!');
+  useDocumentTitle('Check Out Step 2 | Salinaka');
   useScrollTop();
   const dispatch = useDispatch();
   const history = useHistory();
@@ -104,7 +104,6 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
                     <ArrowRightOutlined />
                   </button>
                 </div>
-
               </Form>
             )}
           </Formik>
@@ -115,7 +114,6 @@ const ShippingDetails = ({ profile, shipping, subtotal }) => {
 };
 
 ShippingDetails.propTypes = {
-  // subtotal: PropType.string.isRequired,
   subtotal: PropType.number.isRequired,
   profile: PropType.shape({
     fullname: PropType.string,

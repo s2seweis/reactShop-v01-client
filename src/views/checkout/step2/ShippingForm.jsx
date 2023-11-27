@@ -4,6 +4,7 @@ import { Field, useFormikContext } from 'formik';
 import React from 'react';
 
 const ShippingForm = () => {
+  const { values } = useFormikContext();
   return (
     <div className="checkout-shipping-wrapper">
       <div className="checkout-shipping-form">
@@ -37,6 +38,9 @@ const ShippingForm = () => {
               placeholder="Enter full shipping address"
               component={CustomInput}
             />
+          </div>
+          <div className="d-block checkout-field">
+            <CustomMobileInput name="mobile" defaultValue={values.mobile} />
           </div>
         </div>
         <div className="checkout-fieldset">
